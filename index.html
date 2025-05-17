@@ -25,21 +25,52 @@
         <section id="pembuka">
             <div class="selamat">
                 <h1>The wedding of jokobim</h1>
-                <p>turut mengundang anda</p>
-                <a href="#mempelai">Lanjut</a>
+                <p>turut mengundang anda:</p>
+                <p style="margin-bottom: 2rem; margin-top: 2rem;" id="nama-undangan"></p>
+                <button id="mulai" class="lanjut"><a href="#mempelai">Buka Undangan</a></button>
             </div>
         </section>
 
 
         <!-- 2. Halaman menampilkan kedua mempelai dan countdown acara -->
-        <section id="mempelai">
-            <div class="kedua_mempelai">
-                <h1>Hamalan kedua mempelai</h1>
+        <section id="mempelai" class="hidden">
+            <div class="kedua_mempelai ">
+                <h1>Joko Bimantaro Amd.Kom</h1>
+                <p style="font-family:Playwrite AU SA, cursive;">putra dari bapak fulan</p>
+                <h1>&</h1>
+                <h1>Aisyah Saputri Amd.Ak</h1>
+                <p style="font-family:Playwrite AU SA, cursive;">putri dari bapak fulan</p>
+
+                <!-- countdown acara -->
+                   <section class="countdown-section">
+                <div class="countdown-wrapper">
+                  <div class="countdown-box">
+                    <span id="days">0</span>
+                    <small>HARI</small>
+                  </div>
+                  <div class="countdown-box">
+                    <span id="hours">0</span>
+                    <small>JAM</small>
+                  </div>
+                  <div class="countdown-box">
+                    <span id="minutes">0</span>
+                    <small>MENIT</small>
+                  </div>
+                  <div class="countdown-box">
+                    <span id="seconds">0</span>
+                    <small>DETIK</small>
+                  </div>
+                </div>
+              </section>
+                <button class="kalender"><a href="">simpan tanggalnya</a>
+                </button>
             </div>
+
+
         </section>
 
         <!-- 3. Halaman menampilkan detail acara -->
-        <section id="detail-acara">
+        <section id="detail-acara" class="hidden">
             <div class="detail">
                 <h1>Halaman detail acara</h1>
             </div>
@@ -89,13 +120,13 @@
 
 
     <!-- footer -->
-     <footer style="text-align: center;">
+    <footer style="text-align: center;">
         <p>2025 - Digital Native ID</p>
-     </footer>
+    </footer>
 
 
     <!-- js eksternal -->
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js//script.js"></script>
     <!--aos animation js  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

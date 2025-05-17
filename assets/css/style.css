@@ -3,15 +3,19 @@
     margin: 0;
 }
 
-
-h1{
-    font-family: 'Sacramento', cursive;
-    font-size: 3rem;
-    font-weight: 600;
+:root {
+    scroll-behavior: smooth;
 }
 
-p{
-    margin-top: .5rem;
+body::-webkit-scrollbar {
+    display: none;
+    /* Untuk Chrome, Safari, dan Opera */
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 
@@ -23,6 +27,11 @@ body {
     display: none;
 }
 
+body.tidak-scroll {
+    overflow: hidden;
+    /* supaya tidak bisa scroll saat di halaman cover */
+}
+
 .container {
     text-align: center;
 }
@@ -30,28 +39,60 @@ body {
 /* halaman pembuka */
 #pembuka {
     display: flex;
-    background-image: url(/img/background/backround.png);
+    /* background-image: url(../img/background/backround.png); */
+    background-image: url(../../img/background/backround.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     align-items: center;
     justify-content: center;
+    position: relative;
     z-index: 1;
 }
 
-#pembuka::after{
+#pembuka::after {
+    position: absolute;
     content: "";
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.329);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.678);
     z-index: 2;
 }
 
+.selamat {
+    color: white;
+    z-index: 999;
+    position: relative;
+}
 
 .selamat h1 {
     text-align: center;
     z-index: 999;
-    /* font-size: 4rem; */
+    position: relative;
+    font-size: 4rem;
+    margin-bottom: 5rem;
 }
+
+.lanjut {
+    padding: .5rem 4.5rem;
+    border: 0px solid;
+    border-radius: 5px;
+    background-color: yellow;
+
+}
+
+.lanjut:hover {
+    background-color: rgb(255, 102, 0);
+    transition: .3s ease-in-out;
+}
+
+.lanjut a {
+    color: black;
+    font-family: 'roboto', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 
 /* halaman mempelai */
 #mempelai {
@@ -60,6 +101,56 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.kalender {
+    padding: .5rem 5rem;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.kalender a {
+    text-decoration: none;
+    color: white;
+}
+
+.countdown-section {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1rem;
+}
+
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.countdown-box {
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 100px;
+    background: #000000;
+    backdrop-filter: blur(5px);
+}
+
+.countdown-box span {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.countdown-box small {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    margin-top: 8px;
+    display: block;
+}
+
+
 
 /* halaman detail acara */
 #detail-acara {
