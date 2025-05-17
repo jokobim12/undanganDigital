@@ -100,19 +100,43 @@ body.tidak-scroll {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-image: url(../../img/background/kedua-mempelai.jpg);
+    background-size: cover;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#mempelai::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+    position: absolute;
+    z-index: 2;
+}
+
+.kedua-mempelai{
+    position: relative;
+    z-index: 9999;
+    color: white;
 }
 
 .kalender {
     padding: .5rem 5rem;
-    background-color: black;
+    background-color: rgb(255, 187, 0);
     border: 1px solid;
     border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    border: 0px solid;
 }
 
-.kalender a {
-    text-decoration: none;
-    color: white;
+.kalender:hover{
+    background-color: rgb(255, 51, 0);
+    transition: .2s all ease-in-out;
 }
+
 
 .countdown-section {
     text-align: center;

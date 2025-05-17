@@ -50,13 +50,13 @@ updateCountdown();
 setInterval(updateCountdown, 1000);
 updateCountdown(); // panggil sekali biar nggak nunggu 1 detik
 
-//   lanjutan countdown
-function addToGoogleCalendar() {
-  const title = encodeURIComponent("Pernikahan Joko & Fulan");
-  const location = encodeURIComponent("Gedung Kuliah Terpadu Politala");
-  const details = encodeURIComponent("Yuk hadir di hari bahagia kami 💕");
+// //   lanjutan countdown
+// function addToGoogleCalendar() {
+//   const title = encodeURIComponent("Pernikahan Joko & Fulan");
+//   const location = encodeURIComponent("Gedung Kuliah Terpadu Politala");
+//   const details = encodeURIComponent("Yuk hadir di hari bahagia kami 💕");
 
-  // Format UTC time: 20250315T030000Z = 15 Maret 2025, 10.00 WITA
-  const startDate = "20250715T020000Z";
-  const endDate = "20250715T090000Z";
-}
+//   // Format UTC time: 20250315T030000Z = 15 Maret 2025, 10.00 WITA
+//   const startDate = "20250715T020000Z";
+//   const endDate = "20250715T090000Z";
+// }
