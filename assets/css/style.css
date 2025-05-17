@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+p{
+    margin-top: .5rem;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    text-align: center;
+}
+
+/* halaman pembuka */
+#pembuka {
+    display: flex;
+    background-image: url(/img/background/backround.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#pembuka::after{
+    content: "";
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 2;
+}
+
+
+.selamat h1 {
+    text-align: center;
+    z-index: 999;
+    /* font-size: 4rem; */
+}
+
+/* halaman mempelai */
+#mempelai {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* halaman detail acara */
+#detail-acara {
+    display: flex;
+    background-color: grey;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* halaman story love */
+#story-love {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* halaman galery */
+#galery-mempelai {
+    display: flex;
+    background-color: grey;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* halaman rsvp */
+#rsvp {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* halaman doa doa */
+#doa-doa {
+    display: flex;
+    background-color: grey;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
