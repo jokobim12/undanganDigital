@@ -1,3 +1,23 @@
+// tombol mulai
+  const btnMulai = document.getElementById("mulai");
+  const pembuka = document.getElementById("pembuka");
+  const mempelai = document.getElementById("mempelai");
+
+  btnMulai.addEventListener("click", function (e) {
+    e.preventDefault(); // agar tidak langsung loncat ke #mempelai
+
+    // Swipe halaman pembuka
+    pembuka.classList.add("swipe-up");
+
+    // Tampilkan section mempelai dan scroll ke situ
+    setTimeout(() => {
+      pembuka.style.display = "none"; // sembunyikan pembuka
+      mempelai.classList.remove("hidden"); // tampilkan konten
+      document.getElementById("mempelai").scrollIntoView({ behavior: "smooth" });
+    }, 1000);
+  });
+
+
 document.body.classList.add("tidak-scroll"); // awal tidak bisa scroll
 
 document.getElementById("mulai").addEventListener("click", function () {
@@ -50,13 +70,3 @@ updateCountdown();
 setInterval(updateCountdown, 1000);
 updateCountdown(); // panggil sekali biar nggak nunggu 1 detik
 
-// //   lanjutan countdown
-// function addToGoogleCalendar() {
-//   const title = encodeURIComponent("Pernikahan Joko & Fulan");
-//   const location = encodeURIComponent("Gedung Kuliah Terpadu Politala");
-//   const details = encodeURIComponent("Yuk hadir di hari bahagia kami 💕");
-
-//   // Format UTC time: 20250315T030000Z = 15 Maret 2025, 10.00 WITA
-//   const startDate = "20250715T020000Z";
-//   const endDate = "20250715T090000Z";
-// }

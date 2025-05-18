@@ -38,6 +38,8 @@ body.tidak-scroll {
 
 /* halaman pembuka */
 #pembuka {
+    position: fixed;
+    transition: transform 1s ease-in-out;
     display: flex;
     /* background-image: url(../img/background/backround.png); */
     background-image: url(../../img/background/backround.png);
@@ -59,10 +61,19 @@ body.tidak-scroll {
     z-index: 2;
 }
 
+#pembuka.swipe-up {
+  transform: translateY(-100%);
+}
+
+
 .selamat {
     color: white;
     z-index: 999;
     position: relative;
+}
+
+.selamat img{
+    height: 200px;
 }
 
 .selamat h1 {
@@ -70,7 +81,7 @@ body.tidak-scroll {
     z-index: 999;
     position: relative;
     font-size: 4rem;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
 }
 
 .lanjut {
