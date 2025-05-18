@@ -147,16 +147,65 @@ h1 {
     display: block;
 }
 
+/* halaman detail acara */
 #detail-acara {
+    padding: 5rem 0;
     display: flex;
     background-image: url(../../img/icon/icon.png);
-    background-position: 40% 20%;
-    background-size: cover;
     height: 100vh;
+    background-size: cover;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
+#detail-acara::after{
+    padding: 5rem 0;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #000000a9;
+    z-index: 2;
+}
+
+.detail{
+    z-index: 999;
+}
+
+.detail h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.judul{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 50vh;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    padding: .5rem 3rem;
+    height: 10vh;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.konten{
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.37);
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    width: 50vh;
+    height: 30vh;
+    font-size: 1rem;
+    color: white;
+    padding: 0 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
 
 
 
