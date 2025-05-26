@@ -32,7 +32,7 @@ h1 {
 .selamat img{
     margin-bottom: 2rem;
     height: 200px;
-    border-radius: 90px;
+    border-radius: 100%;
     box-shadow: 1px 0px 5px rgba(255, 255, 255, 0.356) ;
 }
 
